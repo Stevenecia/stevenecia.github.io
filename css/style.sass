@@ -1,0 +1,58 @@
+// Variables para colores y fuentes
+$color-fondo: #f0f0f0
+$color-enlace: #0e5db3
+$color-enlace-hover: #0056b3
+$fuente-titulo: Arial, sans-serif
+
+// Estilos para el cuerpo de la página
+body
+    font-family: $fuente-titulo
+    background-color: $color-fondo
+    text-align: center
+    padding: 20px
+
+// Estilos para el encabezado
+h1
+    color: $color-enlace
+
+// Estilos para la lista de enlaces
+.encuesta-container
+    list-style-type: none
+    padding: 0
+
+li
+    margin: 10px 0
+
+a
+    text-decoration: none
+    color: $color-enlace
+    transition: color 0.3s ease
+    display: inline-block
+
+    &:hover
+        color: $color-enlace-hover
+
+// Estilos para las imágenes de encuestas
+#imagen-encuesta1, #imagen-encuesta2
+    max-width: 100%
+    height: auto
+    border: 2px solid $color-enlace
+    margin: 10px
+
+#imagen-encuesta1
+    max-width: 100%
+    height: 500px
+
+#imagen-encuesta2
+    max-width: 100%
+    height: 500px
+
+span
+    display: block
+    text-align: center
+
+// Estilos receptivos
+@media screen and (max-width: 768px)
+    #imagen-encuesta1, #imagen-encuesta2
+        max-width: 80%
+
